@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaotic Neutral Cafe — Altavista, VA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand">Chaotic Neutral Cafe</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#space">The Space</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#kickstarter">Support Us</a></li>
+        <li><a href="#experience">Coffee &amp; Games</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <img src="assets/logo.png" alt="Chaotic Neutral Cafe" class="hero-logo" />
+      <h1 class="hero-title">Your New Third Place</h1>
+      <p class="hero-sub">
+        Craft coffee. Curated board games. Community.<br />
+        Coming to Altavista, VA.
+      </p>
+      <div class="hero-actions">
+        <!-- TODO: Replace # with your Kickstarter URL when the campaign is live -->
+        <a href="#kickstarter" class="btn btn-primary">Back Us on Kickstarter</a>
+        <a href="#about" class="btn btn-ghost">Learn More</a>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll" aria-label="Scroll down">↓</a>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">What's a Chaotic Neutral Cafe?</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Altavista deserves a third place — somewhere that's not home, not work, just <em>yours</em>.
+            A place to linger over a good cup of coffee, discover a game you've never played,
+            and spend an afternoon with people you actually want to see.
+          </p>
+          <p>
+            That's what we're building: a craft coffee shop with a curated library of board games,
+            a welcoming space for regulars and newcomers alike, and a genuine sense of community —
+            right here on Main Street.
+          </p>
+          <p>
+            The name? Chaotic Neutral is the D&amp;D alignment for people who follow their own rules,
+            do what feels right, and resist being put in a box. That felt about right.
+          </p>
+        </div>
+        <div class="about-features">
+          <div class="feature">
+            <span class="feature-icon">☕</span>
+            <h3>Craft Coffee</h3>
+            <p>Espresso drinks, house drip, and rotating single origins from quality regional roasters.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🎲</span>
+            <h3>Board Game Library</h3>
+            <p>A curated collection for all levels — from quick fillers to deep strategy.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🛡️</span>
+            <h3>Community Space</h3>
+            <p>Events, tournaments, and a place that feels like it actually belongs to the people in it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       THE SPACE
+  ═══════════════════════════════════════ -->
+  <section class="section section-dark" id="space">
+    <div class="container">
+      <h2 class="section-title">A Real Space. A Real Vision.</h2>
+      <p class="section-sub">
+        428 Main St is a downtown Altavista building with exposed brick, wooden beams,
+        and a built-in bar — and this is what we're turning it into.
+      </p>
+
+      <div class="space-grid">
+        <div class="space-pair">
+          <div class="space-img-wrap">
+            <img src="assets/space-before.png" alt="Main space before renovation" />
+            <span class="space-label space-label--before">Before</span>
+          </div>
+          <div class="space-img-wrap">
+            <img src="assets/space-after.png" alt="Main space render" />
+            <span class="space-label space-label--after">After</span>
+          </div>
+        </div>
+        <div class="space-pair">
+          <div class="space-img-wrap">
+            <img src="assets/bar-before.png" alt="Bar area before renovation" />
+            <span class="space-label space-label--before">Before</span>
+          </div>
+          <div class="space-img-wrap">
+            <img src="assets/bar-after.png" alt="Bar area render" />
+            <span class="space-label space-label--after">After</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       MEMBERSHIP
+  ═══════════════════════════════════════ -->
+  <section class="section section-dark" id="membership">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-sub">
+        Whether you're dropping in for a cup or becoming a fixture — there's a place for you here.
+      </p>
+      <div class="membership-grid">
+
+        <div class="membership-card">
+          <h3>Walk-In</h3>
+          <p class="membership-price">No commitment</p>
+          <ul class="membership-list">
+            <li>Any food or drink purchase</li>
+            <li>2 hours of free game play</li>
+            <li>Access to the full game library</li>
+            <li>Great coffee, full stop</li>
+          </ul>
+        </div>
+
+        <div class="membership-card membership-card--featured">
+          <div class="membership-badge">Guild Member</div>
+          <h3>Membership</h3>
+          <p class="membership-price">$10<span>/month</span></p>
+          <ul class="membership-list">
+            <li>Unlimited game time</li>
+            <li>One free drink per visit</li>
+            <li>Priority reservations</li>
+            <li>Members-only events &amp; tournaments</li>
+            <li>10% off food, merch &amp; events</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       KICKSTARTER
+  ═══════════════════════════════════════ -->
+  <section class="section" id="kickstarter">
+    <div class="container">
+      <h2 class="section-title">Help Us Open the Doors</h2>
+      <p class="section-sub">
+        We're raising $10,000 on Kickstarter to cover our initial setup —
+        game library, tables and seating, espresso equipment, and startup costs.
+        Every backer helps make this real.
+      </p>
+
+      <div class="tiers-grid">
+        <div class="tier">
+          <div class="tier-level">Villager</div>
+          <div class="tier-price">$10</div>
+          <div class="tier-reward">Digital founder's card</div>
+        </div>
+        <div class="tier">
+          <div class="tier-level">Adventurer</div>
+          <div class="tier-price">$25</div>
+          <div class="tier-reward">1 month membership + digital founder's card</div>
+        </div>
+        <div class="tier">
+          <div class="tier-level">Guild Member</div>
+          <div class="tier-price">$50</div>
+          <div class="tier-reward">3 months membership + digital founder's card</div>
+        </div>
+        <div class="tier">
+          <div class="tier-level">Dungeon Delver</div>
+          <div class="tier-price">$100</div>
+          <div class="tier-reward">6 months membership + digital founder's card</div>
+        </div>
+        <div class="tier tier--legendary">
+          <div class="tier-level">Party Leader</div>
+          <div class="tier-price">$250</div>
+          <div class="tier-reward">Lifetime founding member status</div>
+        </div>
+        <div class="tier tier--legendary">
+          <div class="tier-level">Legendary Hero</div>
+          <div class="tier-price">$500</div>
+          <div class="tier-reward">Lifetime founding member status</div>
+        </div>
+      </div>
+
+      <div class="kickstarter-cta">
+        <!-- TODO: Replace href="#" with your live Kickstarter URL -->
+        <a href="#" class="btn btn-primary btn-large">Back Us on Kickstarter →</a>
+        <p class="kickstarter-note">Campaign launching soon. Every share helps too.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       COFFEE & GAMES
+  ═══════════════════════════════════════ -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <h2 class="section-title">The Experience</h2>
+      <div class="experience-grid">
+        <div class="experience-block">
+          <h3>☕ The Coffee</h3>
+          <p>
+            We're partnering with quality regional roasters to bring you an honest espresso program —
+            a house blend, a reliable drip, and rotating single origins worth paying attention to.
+            No pretension. Just good coffee made well.
+          </p>
+        </div>
+        <div class="experience-block">
+          <h3>🎲 The Games</h3>
+          <p>
+            Our library will be curated with care — approachable hits, hidden gems,
+            and a few longer games for the serious players.
+            Whether you've never touched a board game or you know what "worker placement" means,
+            there's something on the shelf for you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       LOCATION
+  ═══════════════════════════════════════ -->
+  <section class="section" id="location">
+    <div class="container">
+      <h2 class="section-title">Find Us</h2>
+      <div class="location-grid">
+        <div class="location-info">
+          <h3>Coming to Main Street</h3>
+          <p class="location-address">
+            428 Main St<br />
+            Altavista, VA
+          </p>
+          <p class="location-status">
+            Opening date TBD — back us on Kickstarter to be part of it from day one.
+          </p>
+          <a href="mailto:efoster5001@gmail.com" class="link">efoster5001@gmail.com</a>
+        </div>
+        <div class="location-quote">
+          <blockquote>
+            "A town that hasn't had a third place&nbsp;— until now."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Chaotic Neutral LLC &mdash; Altavista, VA</p>
+      <p class="footer-sub">Do what feels right. Roll for Community.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
