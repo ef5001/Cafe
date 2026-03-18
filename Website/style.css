@@ -193,7 +193,7 @@ em {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 .nav-links a {
@@ -203,6 +203,7 @@ em {
   text-transform: uppercase;
   color: var(--cream-dim);
   transition: color var(--transition);
+  white-space: nowrap;
 }
 .nav-links a:hover {
   color: var(--gold);
@@ -664,11 +665,7 @@ em {
 }
 
 /* ── Responsive ──────────────────────────────── */
-@media (max-width: 768px) {
-  .section {
-    padding-block: 4rem;
-  }
-
+@media (max-width: 1200px) {
   .nav-toggle {
     display: block;
   }
@@ -693,6 +690,12 @@ em {
   .nav-links li a {
     display: block;
     padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: 4rem;
   }
 
   .about-grid,
