@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Animated, StyleSheet, Text, View } from 'react-native';
+import { Animated, Image, StyleSheet, Text, View } from 'react-native';
 
 export default function SplashScreen({ onFinish }) {
   const logoOpacity = useRef(new Animated.Value(0)).current;
@@ -41,9 +41,11 @@ export default function SplashScreen({ onFinish }) {
           { opacity: logoOpacity, transform: [{ scale: logoScale }] },
         ]}
       >
-        <Text style={styles.logoText}>⚄</Text>
-        <Text style={styles.name}>Chaotic Neutral</Text>
-        <Text style={styles.nameSub}>CAFE</Text>
+        <Image
+          source={require('../assets/logo.png')}
+          style={styles.logo}
+          resizeMode="contain"
+        />
       </Animated.View>
 
       <Animated.Text style={[styles.tagline, { opacity: taglineOpacity }]}>
@@ -65,27 +67,10 @@ const styles = StyleSheet.create({
   },
   logoWrapper: {
     alignItems: 'center',
-    gap: 4,
   },
-  logoText: {
-    fontSize: 64,
-    marginBottom: 12,
-  },
-  name: {
-    fontFamily: 'serif',
-    fontSize: 32,
-    fontWeight: '700',
-    color: '#c8922a',
-    letterSpacing: 2,
-    textTransform: 'uppercase',
-  },
-  nameSub: {
-    fontFamily: 'serif',
-    fontSize: 16,
-    fontWeight: '400',
-    color: '#e0b05a',
-    letterSpacing: 10,
-    textTransform: 'uppercase',
+  logo: {
+    width: 260,
+    height: 260,
   },
   tagline: {
     marginTop: 24,
